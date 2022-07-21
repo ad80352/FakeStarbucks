@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Starbucks Taiwan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/all.css">
+</head>
+
+<body>
+    <!-- 上方綠條 -->
+    <div class="greenLine"></div>
+    <!-- 右方隨行卡 -->
+    <div id="starCard">
+        <a href="#"><img src="/images/隨行卡.jpg" alt="隨行卡"></a>
+    </div>
+    <!-- header 電腦版頁面 -->
+    <header>
+        <div class="container d-flex flex-between">
+            <div class="d-flex">
+                <h1 id="starbucksIcon">
+                    <a href="#">
+                        <img src="/images/Taiwan_Icon.png" alt="starbucksIcon">
+                    </a>
+                </h1>
+                <navbar class="d-flex align-end">
+                    <ul id="navbar" class="d-flex">
+                        <li><a href="#">咖啡</a></li>
+                        <li><a href="#">商品</a></li>
+                        <li><a href="#">門市</a></li>
+                        <li><a href="#">星禮程</a></li>
+                        <li><a href="#">第四生活空間</a></li>
+                        <li><a href="#">送禮專區</a></li>
+                        <li><a href="#">線上門市</a></li>
+                    </ul>
+                </navbar>
+            </div>
+            <ul id="location" class="d-flex align-baseline">
+                <li>
+                    <a href="#"><img class="apron" src="/images/apron.png" alt="apron">夥伴招募</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-geo-alt" viewBox="0 0 16 16">
+                            <path
+                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg>門市查詢
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- header RWD頁面 -->
+    <header id="headerMobile" class="d-none container">
+        <h1 id="starbucksIcon">
+            <a href="#"><img src="/images/Taiwan_Icon.png" alt="starbucksIcon"></a>
+        </h1>
+        <div class="icon d-flex align-center">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <content>
+        <!-- p1/m1 電腦版頁面 -->
+        <section id="p1" class="container mt-32 position-relative text-center text-white">
+            <a href="#">
+                <img src="/images/p1_夏日清爽.jpg" alt="夏日清爽">
+                <div id="summerCool" class="position-absolute text-white">
+                    <p>夏日清爽果味 煥然沁心</p>
+                    <p>KEEP IT COOL</p>
+                    <p>享受絕妙清爽的嶄新風味</p>
+                </div>
+                <div id="strawberryLemon" class="strawberry position-absolute text-center">
+                    <a id="new" href="#" class="btn text-white">NEW</a>
+                    <a href="#" class="text-white">
+                        <p class="strawberryTitle mt-32">草莓巴西莓檸檬風味星沁爽<sup>TM</sup></p>
+                        <p>
+                            Strawberry Acai with Lemonade <br>
+                            Starbucks Refreshers
+                        </p>
+                    </a>
+                </div>
+                <div id="strawberryCoconut" class="strawberry position-absolute text-center">
+                    <a id="new" href="#" class="btn text-white">NEW</a>
+                    <a href="#" class="text-white">
+                        <p class="strawberryTitle mt-32">草莓巴西莓椰奶風味星沁爽<sup>TM</sup></p>
+                        <p>
+                            Pink Drink with Strawberry <br>
+                            Starbucks Refreshers
+                        </p>
+                        <p>(made with coconutmilk)</p>
+                        <p>（含堅果類及其製品）</p>
+                    </a>
+                </div>
+                <p class="note position-absolute"><a href="#" class="text-white">此飲品含咖啡因（咖啡生豆萃取）</a></p>
+            </a>
+        </section>
+        <!-- p1/m1 RWD頁面 -->
+        <section id="m1" class="mt-24 d-none position-relative">
+            <a href="#">
+                <img src="/images/m1_夏日清爽.jpg" alt="">
+                <div id="summerCool" class="position-absolute text-white text-center">
+                    <p>STARBUCKS</p>
+                    <P>REFRESHERS</P>
+                    <p>星沁爽 擁抱清新爽快</p>
+                    <p>繽紛夏日 美味水果風味</p>
+                </div>
+                <div id="strawberryCoconut" class="strawberry position-absolute text-white text-center">
+                    <a id="new" href="#" class="btn text-white">NEW</a>
+                    <p class="strawberryTitle mt-16">
+                        草莓巴西莓椰奶風味 <br>
+                        星沁爽
+                    </p>
+                    <p>
+                        Pink Drink with Strawberry Acai <br>
+                        Starbucks Refreshers
+                    </p>
+                    <p>(made with coconutmilk)</p>
+                    <p>（含堅果類及其製品）</p>
+                </div>
+                <div id="strawberryLemon" class="strawberry position-absolute text-center text-white">
+                    <a id="new" href="#" class="btn text-white">NEW</a>
+                    <p class="strawberryTitle mt-16">
+                        草莓巴西莓檸檬風味 <br>
+                        星沁爽
+                    </p>
+                    <p>
+                        Strawberry Acai with Lemonade <br>
+                        Starbucks Refreshers
+                    </p>
+                </div>
+                <p class="note position-absolute text-white">此飲品含咖啡因（咖啡生豆萃取）</p>
+            </a>
+        </section>
+        <!-- p2/m2 電腦版頁面-->
+        <section id="p2" class="container mt-32 position-relative text-center">
+            <a href="#">
+                <img src="/images/p2_酸甜蜜柚.jpg" alt="阿里山蜜柚烏龍清茶">
+                <div id="oolongTea" class="position-absolute">
+                    <p>阿里山蜜柚烏龍青茶</p>
+                    <p>Ruby Grapefruit Alishan Oolong Tea</p>
+                </div>
+                <div id="pomelo" class="position-absolute">
+                    <p class="mb-48">酸甜蜜柚 回甘韻味</p>
+                    <a href="#" class="btn">了解詳情</a>
+                </div>
+            </a>
+        </section>
+        <!-- p2/m2 RWD頁面 -->
+        <section id="m2" class="mt-24 position-relative text-center d-none">
+            <a href="#">
+                <img src="/images/m2_酸甜蜜柚.jpg" alt="阿里山蜜柚烏龍清茶">
+            </a>
+            <div id="pomelo" class="position-absolute">
+                <p class="mb-32">酸甜蜜柚 回甘韻味</p>
+                <a href="#" class="btn">了解詳情</a>
+            </div>
+            <div id="oolongTea" class="position-absolute">
+                <p>阿里山蜜柚烏龍青茶</p>
+                <p>Ruby Grapefruit Alishan Oolong Tea</p>
+            </div>
+        </section>
+        <!-- p3/m3 電腦版頁面 -->
+        <section id="p3" class="container mt-32 position-relative text-center">
+            <a href="#">
+                <img src="/images/p3_父親節預購.jpg" alt="父親節預購">
+                <div id="fathersDay" class="position-absolute">
+                    <p>2022父親節商品預購</p>
+                    <p class="mb-32">獻給最棒的爹地甜蜜的禮物</p>
+                    <a href="#" class="btn">了解詳情</a>
+                </div>
+            </a>
+        </section>
+        <!-- p3/m3 RWD頁面 -->
+        <section id="m3" class=" mt-24 position-relative text-center d-none">
+            <a href="#">
+                <img src="/images/m3_父親節預購.jpg" alt="父親節預購">
+            </a>
+            <div id="fathersDay" class="position-absolute">
+                <p>2022父親節商品預購</p>
+                <p class="mb-32">獻給最棒的爹地甜蜜的禮物</p>
+                <a href="#" class="btn">了解詳情</a>
+            </div>
+        </section>
+        <!-- p4/m4 電腦版頁面 -->
+        <section id="p4" class="container mt-32 position-relative text-center">
+            <a href="#">
+                <img src="/images/p4_星空映月.jpg" alt="星空映月">
+                <div id="moon" class="position-absolute">
+                    <p>星空映月 祝福共圓</p>
+                    <p class="mb-32 mt-16">
+                        2022/7/20~8/23 <br>
+                        中秋禮盒預購中
+                    </p>
+                    <a href="#" class="btn">了解詳情</a>
+                </div>
+            </a>
+        </section>
+        <!-- p4/m4 RWD頁面 -->
+        <section id="m4" class=" mt-24 position-relative text-center d-none mb-24">
+            <a href="#">
+                <img src="/images/m4_星空映月.jpg" alt="星空映月">
+            </a>
+            <div id="moon" class="position-absolute">
+                <p>星空映月 祝福共圓</p>
+                <p class="mt-16 mb-32">
+                    2022/7/20~8/23 <br>
+                    中秋禮盒預購中
+                </p>
+                <a href="#" class="btn">了解詳情</a>
+            </div>
+        </section>
+        <!-- p5/m5 電腦版頁面-->
+        <section id="p5" class="container mt-32 position-relative text-center d-flex">
+            <div id="gift" class="d-flex align-center flex-col position-relative">
+                <img src="/images/p5_星禮程.svg" alt="星禮程">
+                <img src="/images/金星禮.svg" alt="星星" class="position-absolute">
+                <p class="text-white mb-40">美好旅程 從星開始</p>
+                <div>
+                    <a href="#" class="btn text-white">立即加入</a>
+                    <span>&nbsp&nbsp&nbsp&nbsp</span>
+                    <a href="#" class="btn text-white">登入</a>
+                </div>
+            </div>
+            <div id="giftTwo" class="d-flex jcc align-center flex-col text-center">
+                <img src="/images/金星禮.svg" alt="星星">
+                <p class="text-white mb-40">星禮程 金星禮</p>
+                <p class="text-white mb-40">專屬你的金星禮，享受驚喜回饋</p>
+                <a href="#" class="btn text-white">了解詳情</a>
+            </div>
+        </section>
+        <!-- p5/m5 RWD頁面。為什麼從這裡開始.mt-24就沒作用？-->
+        <section id="m5" class="mt-24 text-center d-flex d-none mb-24">
+            <div id="giftTwo" class="d-flex jcc align-center flex-col text-center">
+                <img src="/images/金星禮.svg" alt="星星">
+                <p class="text-white mb-24">星禮程 金星禮</p>
+                <p class="text-white mb-32">專屬你的金星禮，享受驚喜回饋</p>
+                <a href="#" class="btn text-white">了解詳情</a>
+            </div>
+            <div id="gift" class="d-flex align-center flex-col position-relative">
+                <img src="/images/p5_星禮程.svg" alt="星禮程">
+                <img src="/images/金星禮.svg" alt="星星" class="position-absolute">
+                <p class="text-white mb-40">美好旅程 從星開始</p>
+                <div>
+                    <a href="#" class="btn text-white">立即加入</a>
+                    <span>&nbsp&nbsp&nbsp&nbsp</span>
+                    <a href="#" class="btn text-white">登入</a>
+                </div>
+            </div>
+        </section>
+        <!-- p6/m6 電腦版頁面 -->
+        <section id="p6" class="container mt-32 text-center d-flex jcc">
+            <div id="mobileOrder" class="d-flex flex-reverse">
+                <img src="/images/安心取.png" alt="安心取">
+            </div>
+            <div id="mobileText" class="text-white position-relative">
+                <div id="mobileTextInner" class="position-absolute text-center">
+                    <p class="mb-32">
+                        星巴克行動預點 <br>
+                        低接觸&nbsp&nbsp&nbsp安心取
+                    </p>
+                    <a href="#" class="btn text-white">了解詳情</a>
+                </div>
+            </div>
+        </section>
+        <!-- p6/m6 RWD頁面 -->
+        <section id="m6" class="mt-24 text-white text-center d-none mb-24 d-flex flex-col">
+            <p class="mb-32">
+                星巴克行動預點 <br>
+                低接觸&nbsp&nbsp&nbsp安心取
+            </p>
+            <div class="mb-32"><a href="#" class="btn text-white">了解詳情</a></div>
+            <img src="/images/安心取.png" alt="安心取">
+        </section>
+        <!-- p7/m7 電腦版頁面 -->
+        <section id="p7" class="container mt-32 text-center d-flex">
+            <div id="subscription" class="card">
+                <a href="#">
+                    <img src="/images/p7_訂閱服務.jpg" alt="訂閱服務">
+                    <p>咖啡訂閱服務</p>
+                    <p>新方案升級登場</p>
+                    <a href="#" class="btn">了解訂閱方案</a>
+                </a>
+            </div>
+            <div id="delivery" class="card">
+                <a href="#">
+                    <img src="/images/p7_星巴克外送.jpg" alt="星巴克外送">
+                    <p>今天 想來點星巴克</p>
+                    <p>上外送平台點購，咖啡為你直送到手</p>
+                    <a href="#" class="btn">了解詳情</a>
+                </a>
+            </div>
+        </section>
+        <!-- p7/m7 RWD頁面 -->
+        <section id="m7" class="mt-24 text-center d-flex d-none">
+            <div id="subscription" class="card">
+                <a href="#">
+                    <p>咖啡訂閱服務</p>
+                    <p>新方案升級登場</p>
+                    <a href="#" class="btn">了解訂閱方案</a>
+                    <p></p>
+                    <img src="/images/p7_訂閱服務.jpg" alt="訂閱服務">
+                </a>
+            </div>
+            <div id="delivery" class="card">
+                <a href="#">
+                    <p>今天 想來點星巴克</p>
+                    <p>上外送平台點購，咖啡為你直送到手</p>
+                    <a href="#" class="btn">了解詳情</a>
+                    <p></p>
+                    <img src="/images/p7_星巴克外送.jpg" alt="星巴克外送">
+                </a>
+            </div>
+        </section>
+    </content>
+    <!-- footer 電腦版頁面 -->
+    <footer id="footerWin" class="mt-64">
+        <div id="socialMedia" class="container">
+            <a href="#"><img src="/images/facebook.png" alt="starbucks_facebook"></a>
+            <a href="#"><img src="/images/instagram.png" alt="starbucks_instagram"></a>
+            <a href="#"><img src="/images/youtube.png" alt="starbucks_youtube"></a>
+            <a href="#"><img src="/images/line.png" alt="starbucks_line"></a>
+        </div>
+        <hr>
+        <div id="aboutUs" class="container d-flex">
+            <ul>
+                <li>認識我們</li>
+                <li><a href="#">關於星巴克</a></li>
+                <li><a href="#">企業責任</a></li>
+                <li><a href="#">企業公告</a></li>
+                <li><a href="#">星聞室</a></li>
+            </ul>
+            <ul>
+                <li>夥伴招募</li>
+                <li><a href="#">夥伴招募</a></li>
+                <li><a href="#">成為我們的夥伴</a></li>
+                <li><a href="#">我們的福利</a></li>
+                <li><a href="#">發展晉升與專業學習</a></li>
+            </ul>
+            <ul>
+                <li>社群平台</li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">LINE</a></li>
+            </ul>
+            <ul>
+                <li>顧客關懷</li>
+                <li><a href="#">常見問題</a></li>
+                <li><a href="#">我在星巴克的小故事</a></li>
+                <li class="clarify"><a href="#">網路謠言澄清說明</a></li>
+            </ul>
+        </div>
+        <ul id="customerService" class="container d-flex">
+            <li><a href="#">網站地圖</a></li>
+            <li>|</li>
+            <li><a href="#">個人資料保護政策</a></li>
+            <li>|</li>
+            <li><a href="#">使用條款與須知</a></li>
+            <li>|</li>
+            <li><a href="#">聯絡我們 Customer Service</a></li>
+            <li>|</li>
+            <li>客服專線 0800-000-482 （服務時間: 週一至週五 09:00-18:00，六日與國定假日除外）</li>
+        </ul>
+        <p class="container mt-8">© 2022 Starbucks Coffee Company. 03_陳思璇.</p>
+    </footer>
+    <!-- footer RWD頁面-->
+    <footer id="footerRWD" class="mt-32 d-none">
+        <div id="socialMedia">
+            <a href="#"><img src="/images/facebook.png" alt="starbucks_facebook"></a>
+            <a href="#"><img src="/images/instagram.png" alt="starbucks_instagram"></a>
+            <a href="#"><img src="/images/youtube.png" alt="starbucks_youtube"></a>
+            <a href="#"><img src="/images/line.png" alt="starbucks_line"></a>
+        </div>
+        <hr id="theLine">
+        <ul id="aboutUs">
+            <li class="d-flex flex-between">
+                <a href="#">認識我們</a>
+                <a href="#"><img src="/images/down-arrow.png" alt="下拉箭頭"></a>
+            </li>
+            <hr>
+            <li class="d-flex flex-between">
+                <a href="#">夥伴招募</a>
+                <a href="#"><img src="/images/down-arrow.png" alt="下拉箭頭"></a>
+            </li>
+            <hr>
+            <li class="d-flex flex-between">
+                <a href="#">社群平台</a>
+                <a href="#"><img src="/images/down-arrow.png" alt="下拉箭頭"></a>
+            </li>
+            <hr>
+            <li class="d-flex flex-between">
+                <a href="#">顧客關懷</a>
+                <a href="#"><img src="/images/down-arrow.png" alt="下拉箭頭"></a>
+            </li>
+            <hr>
+        </ul>
+        <ul id="customerService">
+            <li><a href="#">網站地圖</a></li>
+            <li><a href="#">個人資料保護政策</a></li>
+            <li><a href="#">使用條款與須知</a></li>
+            <li><a href="#">聯絡我們 Customer Service</a></li>
+        </ul>
+        <p>客服專線 0800-000-482 （服務時間: 週一至週五 09:00-18:00，六日與國定假日除外）</p>
+        <p class="mt-32 mb-32">© 2022 Starbucks Coffee Company. 03_陳思璇.</p>
+    </footer>
+</body>
+
+</html>
