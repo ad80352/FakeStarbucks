@@ -1,4 +1,4 @@
-# FakeStarbucks Home Page
+# [FakeStarbucks Home Page](https://ad80352.github.io/FakeStarbucks/)
 
 * 靜態頁面
 * CSS 純手刻
