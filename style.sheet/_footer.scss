@@ -1,0 +1,132 @@
+#footerWin {
+    background-color: rgb(246, 246, 246);
+    padding-bottom: 40px;
+
+    #socialMedia {
+        padding: 20px 0;
+
+        img {
+            max-width: 50px;
+            margin-left: 8px;
+        }
+    }
+
+    hr {
+        background-color: #fff;
+        border: none;
+        height: 4px;
+    }
+
+    #aboutUs {
+        gap: 180px;
+
+        ul {
+            padding: 20px 0;
+
+            li {
+                font-size: 18px;
+                margin-bottom: 24px;
+            }
+
+            li a {
+                color: #000;
+            }
+
+            .clarify a {
+                color: rgb(0, 112, 74);
+            }
+
+            li a:hover {
+                color: gray;
+            }
+
+            li:nth-of-type(1) {
+                font-size: 24px;
+                margin-bottom: 32px;
+            }
+        }
+
+    }
+
+    #customerService {
+        gap: 16px;
+        font-size: 17px;
+
+        li a {
+            color: rgb(48, 45, 45);
+        }
+
+        li a:hover {
+            color: rgb(114, 112, 112);
+        }
+    }
+
+    p {
+        color: rgb(48, 45, 45);
+    }
+}
+
+@media (max-width: 768px) {
+    #footerWin {
+        display: none;
+    }
+
+    #footerRWD {
+        display: block;
+        background-color: rgb(246, 246, 246);
+        padding: 10px 0;
+
+        #socialMedia {
+            padding: 10px 0;
+
+            img {
+                max-width: 40px;
+                margin-left: 16px;
+            }
+        }
+
+        #theLine {
+            background-color: #fff;
+            border: none;
+            height: 4px;
+        }
+
+        #aboutUs {
+            padding: 0 20px;
+
+            li {
+                padding: 16px 0;
+                font-size: 20px;
+            }
+
+            li img {
+                max-width: 20px;
+            }
+
+            li a {
+                color: #000;
+            }
+        }
+
+        #customerService {
+            padding: 10px 20px;
+
+            li {
+                margin-bottom: 16px;
+            }
+
+            li:nth-last-child(1) {
+                margin-bottom: 0;
+            }
+
+            li a {
+                color: gray;
+            }
+        }
+
+        p {
+            padding: 0 20px;
+            color: gray;
+        }
+    }
+}

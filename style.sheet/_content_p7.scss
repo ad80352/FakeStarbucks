@@ -1,0 +1,129 @@
+#p7 {
+    gap: 20px;
+
+    .card {
+        width: 50%;
+        line-height: 2;
+        padding-bottom: 40px;
+
+        p:nth-of-type(1) {
+            padding-top: 20px;
+            font-size: 42px;
+            letter-spacing: 3px;
+        }
+
+        p:nth-of-type(2) {
+            font-size: 26px;
+            margin-bottom: 32px;
+        }
+
+        .btn {
+            font-weight: 500;
+        }
+
+        .btn:hover {
+            filter: brightness(0.9);
+        }
+
+    }
+
+    #subscription {
+        background-color: rgb(0, 116, 67);
+
+        a {
+            color: #fff;
+        }
+    }
+
+    #delivery {
+        background-color: rgb(212, 233, 226);
+
+        a {
+            color: #000;
+        }
+
+        .btn {
+            border: 1px solid rgb(30, 57, 50);
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #p7 {
+        display: none;
+    }
+
+    #m7 {
+        display: block;
+        display: flex;
+        gap: 100px;
+
+        .card {
+            width: 50%;
+            line-height: 2;
+
+            p:nth-of-type(1) {
+                padding-top: 20px;
+                font-size: 30px;
+                letter-spacing: 3px;
+            }
+
+            p:nth-of-type(2) {
+                font-size: 18px;
+                margin-bottom: 24px;
+            }
+
+            .btn {
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            .btn:hover {
+                filter: brightness(0.9);
+            }
+
+        }
+
+        #subscription {
+            background-color: rgb(0, 116, 67);
+
+            a {
+                color: #fff;
+            }
+        }
+
+        #delivery {
+            background-color: rgb(212, 233, 226);
+
+            a {
+                color: #000;
+            }
+
+            .btn {
+                border: 1px solid rgb(30, 57, 50);
+            }
+
+            .btn:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px){
+    #m7{
+        flex-direction: column;
+        gap: 24px;
+
+        .card{
+            width: 100%;
+            p:nth-of-type(2) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}

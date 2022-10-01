@@ -1,0 +1,148 @@
+#p5 {
+    a {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    a:hover {
+        filter: brightness(0.9);
+    }
+
+    #gift {
+        width: 50%;
+        background-color: rgb(30, 57, 50);
+        padding-top: 110px;
+
+        img:nth-of-type(1) {
+            max-width: 380px;
+        }
+
+        img:nth-of-type(2) {
+            max-width: 80px;
+            right: 16%;
+            top: 25%;
+        }
+
+        p {
+            font-size: 35px;
+            font-weight: 500;
+        }
+
+    }
+
+    #giftTwo {
+        width: 50%;
+        padding: 110px 50px 60px 50px;
+        background-color: rgb(0, 112, 74);
+
+        img {
+            max-width: 160px;
+            margin: 0 auto;
+        }
+
+        p:nth-of-type(1) {
+            font-size: 45px;
+            font-weight: 500;
+        }
+
+        p:nth-of-type(2) {
+            font-size: 28px;
+        }
+
+        a {
+            padding: 10px 25px;
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    #p5 {
+        display: none;
+    }
+
+    #m5 {
+        display: block;
+        flex-direction: column;
+
+        a:hover {
+            filter: brightness(0.9);
+        }
+
+        #giftTwo {
+            width: 100%;
+            padding: 20px;
+            background-color: rgb(0, 112, 74);
+
+            img {
+                max-width: 120px;
+                margin: 0 auto;
+            }
+
+            p:nth-of-type(1) {
+                font-size: 28px;
+                font-weight: 500;
+            }
+
+            p:nth-of-type(2) {
+                font-size: 16px;
+            }
+
+            a {
+                padding: 5px 15px;
+            }
+
+        }
+
+        #gift {
+            width: 100%;
+            background-color: rgb(30, 57, 50);
+            padding: 30px 20px;
+
+            img:nth-of-type(1) {
+                max-width: 200px;
+            }
+
+            img:nth-of-type(2) {
+                max-width: 50px;
+                top: 10%;
+                right: 33%;
+            }
+
+            p {
+                font-size: 28px;
+                font-weight: 500;
+            }
+
+            a {
+                padding: 3px 15px;
+            }
+
+            a:nth-of-type(2) {
+                padding: 3px 30px;
+            }
+
+        }
+
+    }
+}
+
+@media (max-width: 576px) {
+    #m5 {
+        #gift {
+            img:nth-of-type(2) {
+                right: 28%;
+            }
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    #m5 {
+        #gift {
+            img:nth-of-type(2) {
+                right: 12%;
+            }
+        }
+    }
+}
